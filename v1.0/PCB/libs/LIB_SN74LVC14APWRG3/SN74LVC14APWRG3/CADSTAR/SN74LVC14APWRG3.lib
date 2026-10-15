@@ -1,0 +1,16 @@
+.SN74LVC14APWRG3 :1 ;Hex Schmitt-Trigger Inverter
+SOP65P640X120-14N
+*STM IC
+*NGS
+*PLB 1="1A" 2="1Y" 3="2A" 4="2Y" 5="3A" 6="3Y" 7="GND" 8="4Y" 9="4A" 10="5Y" 11="5A" 12="6Y" 13="6A" 14="VCC"
+*MXP 14
+*DFN SN74LVC14APWRG3
+~!Mouser Part Number (595-SN74LVC14APWRG3)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LVC14APWRG3?qs=GI4%2FryNtbd0oVXocaK57NQ%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (SN74LVC14APWRG3)
+~!Link Datasheet (http://www.ti.com/lit/gpn/sn74lvc14a)
+~!Height (1.2mm)
+~!3D_Model (SN74LVC14APWRG3)
+SN74LVC14APWRG3
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "RJHSE-5380"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-04-09-06:21:18)
+    (mountForm default
+        (footprintRef "RJHSE5380")
+        (spec "System")
+    )
+)

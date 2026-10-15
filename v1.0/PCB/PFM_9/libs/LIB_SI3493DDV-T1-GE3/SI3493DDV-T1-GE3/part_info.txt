@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=SI3493DDV-T1-GE3
+PartCategory=MOSFET (P-Channel)
+PackageCategory=SOT23 (6-Pin)
+PinCount=6
+Version=1.1
+Released=2020-09-03 10:58:28
+Downloaded=2025-05-05 19:21:05
+3D=Y

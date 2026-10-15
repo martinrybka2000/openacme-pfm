@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model RJHSE-5380
+#/19243222/1506874/2.50/10/3/Connector
+DEF RJHSE-5380 J 0 30 Y Y 1 F N
+F0 "J" 850 500 50 H V L CNN
+F1 "RJHSE-5380" 850 400 50 H V L CNN
+F2 "RJHSE5380" 850 300 50 H I L CNN
+F3 "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/rjhsex380.pdf" 850 200 50 H I L CNN
+F4 "Jack Modular Connector 8p8c (RJ45, Ethernet) 90 Angle (Right) Shielded, EMI Finger , 125VAC , 1.5A , -55C ~ 85C" 850 100 50 H I L CNN "Description"
+F5 "13.716" 850 0 50 H I L CNN "Height"
+F6 "" 850 -100 50 H I L CNN "Mouser Part Number"
+F7 "" 850 -200 50 H I L CNN "Mouser Price/Stock"
+F8 "Amphenol Communications Solutions" 850 -300 50 H I L CNN "Manufacturer_Name"
+F9 "RJHSE-5380" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 600 -500 200 U 50 50 0 0 P
+X 2 2 600 500 200 D 50 50 0 0 P
+X 3 3 500 -500 200 U 50 50 0 0 P
+X 4 4 500 500 200 D 50 50 0 0 P
+X 5 5 400 -500 200 U 50 50 0 0 P
+X 6 6 400 500 200 D 50 50 0 0 P
+X 7 7 300 -500 200 U 50 50 0 0 P
+X 8 8 300 500 200 D 50 50 0 0 P
+X MH1 9 1000 0 200 L 50 50 0 0 P
+X MH2 10 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 300 800 300 800 -300 200 -300 200 300 N
+ENDDRAW
+ENDDEF
+#
+#End Library

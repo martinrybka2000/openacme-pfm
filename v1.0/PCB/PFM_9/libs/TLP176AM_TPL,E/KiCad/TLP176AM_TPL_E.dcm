@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLP176AM_TPL,E
+D MOSFET Output Optocouplers Photorelay 1-Form-A VOFF=60V 0.7A 2Ohm
+K
+F http://toshiba.semicon-storage.com/info/docget.jsp?did=60600&prodName=TLP176AM
+$ENDCMP
+#
+#End Doc Library

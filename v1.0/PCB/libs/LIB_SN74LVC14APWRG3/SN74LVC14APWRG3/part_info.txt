@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=SN74LVC14APWRG3
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=2.1
+Released=2020-03-19 08:31:36
+Downloaded=2025-05-04 11:44:03
+3D=Y

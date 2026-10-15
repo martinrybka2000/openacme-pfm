@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SI3493DDV-T1-GE3"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-11-03-19:22:07)
+    (mountForm default
+        (footprintRef "SOT95P284X110-6N")
+        (spec "System")
+    )
+)

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LAN8740AI_EN_TR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Microchip", "LAN8740AI-EN-TR" (!) = "", "QFN50P500X500X100-33N-D", "Quad Flat No-Lead", "579-LAN8740AI-EN-TR", "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8740AI-EN-TR?qs=6qKXPk0vzx1pdBrIaNrUbA%3D%3D", "Ethernet ICs Small Footprint MII/RMII 10/100 Energy Efficient Ethernet Transceiver", "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-15/280025.pdf", "1 mm"
+END_PART
+
+END.

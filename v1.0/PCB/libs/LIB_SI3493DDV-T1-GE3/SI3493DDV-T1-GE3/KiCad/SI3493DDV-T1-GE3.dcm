@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SI3493DDV-T1-GE3
+D MOSFET -20V Vds 8V Vgs TSOP-6
+K
+F https://www.vishay.com/docs/74735/si3493ddv.pdf
+$ENDCMP
+#
+#End Doc Library

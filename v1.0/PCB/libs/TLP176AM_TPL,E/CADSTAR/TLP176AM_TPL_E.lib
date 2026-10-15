@@ -1,0 +1,16 @@
+.TLP176AM_TPL_E :1 ;MOSFET Output Optocouplers Photorelay 1-Form-A VOFF=60V 0.7A 2Ohm
+TLP266J
+*STM K
+*NGS
+*PLB 1="ANODE" 3="CATHODE" 4="DRAIN_1" 6="DRAIN_2"
+*MXP 4
+*DFN TLP176AM_TPL_E
+~!Mouser Part Number (757-TLP176AMTPLE)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Toshiba/TLP176AMTPLE?qs=55YtniHzbhAOdrQPD2H%2FVA%3D%3D)
+~!Manufacturer_Name (Toshiba)
+~!Manufacturer_Part_Number (TLP176AM(TPL,E)
+~!Link Datasheet (http://toshiba.semicon-storage.com/info/docget.jsp?did=60600&prodName=TLP176AM)
+~!Height (2mm)
+~!3D_Model (TLP176AM_TPL,E)
+TLP176AM_TPL_E
+1.1!U 3.1!U 4.1!U 6.1!U 

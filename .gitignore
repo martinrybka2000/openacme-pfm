@@ -1,0 +1,49 @@
+# ---- Build outputs ----
+build/
+out/
+dist/
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+
+# ---- STM32CubeMX / CMake / CubeIDE ----
+Debug/
+Release/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.ninja
+.ninja_*
+*.uvguix.*
+*.launch
+*.ioc.crc
+
+# ---- KiCad ----
+*-backups/
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+fp-info-cache
+__pycache__/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- IDE / OS ----
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Local secrets ----
+.env
+*.local

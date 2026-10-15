@@ -1,0 +1,24 @@
+name: CI - Hardware
+
+on:
+  push:
+    paths:
+      - 'hardware/**'
+  pull_request:
+    paths:
+      - 'hardware/**'
+  workflow_dispatch:
+
+jobs:
+  erc-drc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # TODO: wire up kicad-cli once the KiCad projects exist.
+      # Expected flow:
+      #   1. install kicad (kicad-cli)
+      #   2. kicad-cli sch erc  hardware/control-board/control-board.kicad_sch
+      #   3. kicad-cli pcb drc hardware/control-board/control-board.kicad_pcb
+      - name: ERC / DRC (placeholder)
+        run: echo "Hardware CI is a stub — add kicad-cli ERC/DRC once hardware/ projects land."

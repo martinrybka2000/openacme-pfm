@@ -1,0 +1,6 @@
+ESD footprint
+TPS UV/OV resistors
+VCC do fault led powinno być przed TPS
+R35 zbędny, R36 prawdopodobnie też 
+Odstep pomiędzy wyspami zasilań 
+złe rezystory do tpsa

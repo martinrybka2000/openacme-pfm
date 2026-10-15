@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "RJHSE5380"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "RJHSE5380")
+        (spec "default")
+    )
+)

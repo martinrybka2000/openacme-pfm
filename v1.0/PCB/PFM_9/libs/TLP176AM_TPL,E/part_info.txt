@@ -1,0 +1,9 @@
+Manufacturer=Toshiba
+PartNumber=TLP176AM(TPL,E
+PartCategory=Relay or Contactor
+PackageCategory=Other
+PinCount=4
+Version=1.2
+Released=2018-11-06 09:37:50
+Downloaded=2025-05-03 22:58:22
+3D=Y

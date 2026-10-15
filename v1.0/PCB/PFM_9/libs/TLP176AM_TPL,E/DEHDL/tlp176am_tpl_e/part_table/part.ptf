@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TLP176AM_TPL_E'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Toshiba", "TLP176AM(TPL,E" (!) = "", "TLP266J", "Other", "757-TLP176AMTPLE", "https://www.mouser.co.uk/ProductDetail/Toshiba/TLP176AMTPLE?qs=55YtniHzbhAOdrQPD2H%2FVA%3D%3D", "MOSFET Output Optocouplers Photorelay 1-Form-A VOFF=60V 0.7A 2Ohm", "http://toshiba.semicon-storage.com/info/docget.jsp?did=60600&prodName=TLP176AM", "2 mm"
+END_PART
+
+END.

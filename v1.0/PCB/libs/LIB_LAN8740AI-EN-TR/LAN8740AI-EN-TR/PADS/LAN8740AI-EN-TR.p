@@ -1,0 +1,50 @@
+*PADS-LIBRARY-PART-TYPES-V9*
+
+LAN8740AI-EN-TR QFN50P500X500X100-33N-D I ANA 7 1 0 0 0
+TIMESTAMP 2025.05.02.22.17.43
+"Mouser Part Number" 579-LAN8740AI-EN-TR
+"Mouser Price/Stock" https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8740AI-EN-TR?qs=6qKXPk0vzx1pdBrIaNrUbA%3D%3D
+"Manufacturer_Name" Microchip
+"Manufacturer_Part_Number" LAN8740AI-EN-TR
+"Description" Ethernet ICs Small Footprint MII/RMII 10/100 Energy Efficient Ethernet Transceiver
+"Datasheet Link" https://datasheet.datasheetarchive.com/originals/distributors/DKDS-15/280025.pdf
+"Geometry.Height" 1mm
+GATE 1 33 0
+LAN8740AI-EN-TR
+1 0 U VDD2A
+2 0 U LED2/NINT/NPME/\NINTSEL
+3 0 U LED1/NINT/NPME/\REGOFF
+4 0 U XTAL2
+5 0 U XTAL1/CLKIN
+6 0 U VDDCR
+7 0 U RXCLK/\PHYAD1
+8 0 U RXD3/\PHYAD2
+9 0 U RXD2/NPME/\RMIISEL
+10 0 U RXD1/\MODE1
+11 0 U RXD0/\MODE0
+12 0 U VDDIO
+13 0 U RXER/RXD4/\PHYAD0
+14 0 U CRS
+15 0 U COL/CRS_DV/\MODE2
+16 0 U MDIO
+24 0 U TXD2
+23 0 U TXD1
+22 0 U TXD0
+21 0 U TXEN
+20 0 U TXCLK
+19 0 U NRST
+18 0 U NINT/TXER/TXD4
+17 0 U MDC
+33 0 U EP
+32 0 U RBIAS
+31 0 U RXP
+30 0 U RXN
+29 0 U TXP
+28 0 U TXN
+27 0 U VDD1A
+26 0 U RXDV
+25 0 U TXD3
+
+*END*
+*REMARK* SamacSys ECAD Model
+258062/1506874/2.50/33/3/Integrated Circuit

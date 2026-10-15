@@ -1,0 +1,116 @@
+
+(EDIF
+  (rename &TLP176AM_TPL_E "TLP176AM_TPL_E")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2025 05 03 22 58 22)
+      (dataOrigin "1230379/1506874/2.50/4/4/Relay or Contactor")
+      (program "SamacSys ECAD Model TLP176AM_TPL_E"
+        (version "1.2"))))
+  (library
+  (rename &TLP176AM_TPL_E "TLP176AM_TPL_E")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &TLP176AM_TPL_E "TLP176AM_TPL_E")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "K")
+          (property (rename PACKAGENAME "PackageName") (string "TLP176AM_TPL_E"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "TLP266J"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "757-TLP176AMTPLE"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/Toshiba/TLP176AMTPLE?qs=55YtniHzbhAOdrQPD2H%2FVA%3D%3D"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "Toshiba"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "TLP176AM(TPL,E"))
+          (property (rename &Description "Description") (string "MOSFET Output Optocouplers Photorelay 1-Form-A VOFF=60V 0.7A 2Ohm"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "http://toshiba.semicon-storage.com/info/docget.jsp?did=60600&prodName=TLP176AM"))
+          (property (rename &Height "Height") (string "2 mm"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "TLP176AM_TPL_E"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &ANODE "ANODE")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &CATHODE "CATHODE")
+            (designator "3")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (port
+            (rename &DRAIN_1 "DRAIN_1")
+            (designator "4")
+            (property (rename ORDER "Order") (string "2") (owner "OrCAD"))
+          )
+          (port
+            (rename &DRAIN_2 "DRAIN_2")
+            (designator "6")
+            (property (rename ORDER "Order") (string "3") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &ANODE (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -100) (pt 0 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -100))))
+            )
+            (portImplementation
+              (name &CATHODE (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -200) (pt 0 -200))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -200))))
+            )
+            (portImplementation
+              (name &DRAIN_1 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 1000 -200) (pt 1200 -200))))
+              (connectLocation (figure GRAPHIC (dot (pt 1200 -200))))
+            )
+            (portImplementation
+              (name &DRAIN_2 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 1000 -100) (pt 1200 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt 1200 -100))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 1000 0)
+                  (pt 1000 -300)
+                  (pt 0 -300)
+                  (pt 0 0)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 1050 130))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 1050 30))))
+          )
+        )
+      )
+    )
+  )
+)

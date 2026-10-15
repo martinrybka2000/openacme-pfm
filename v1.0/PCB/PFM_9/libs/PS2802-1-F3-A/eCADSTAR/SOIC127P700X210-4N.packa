@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "PS2802-1-F3-A"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2023-10-24-19:30:28)
+    (mountForm default
+        (footprintRef "SOIC127P700X210-4N")
+        (spec "System")
+    )
+)

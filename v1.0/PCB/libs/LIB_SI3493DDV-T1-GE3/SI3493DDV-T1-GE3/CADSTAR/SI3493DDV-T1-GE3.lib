@@ -1,0 +1,16 @@
+.SI3493DDV-T1-GE3 :1 ;MOSFET -20V Vds 8V Vgs TSOP-6
+SOT95P284X110-6N
+*STM Q
+*NGS
+*PLB 1="D_1" 2="D_2" 3="G" 4="S" 5="D_3" 6="D_4"
+*MXP 6
+*DFN SI3493DDV-T1-GE3
+~!Mouser Part Number (78-SI3493DDV-T1-GE3)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/SI3493DDV-T1-GE3?qs=Mv7BduZupUhpV99w3U%2FyBA%3D%3D)
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (SI3493DDV-T1-GE3)
+~!Link Datasheet (https://www.vishay.com/docs/74735/si3493ddv.pdf)
+~!Height (1.1mm)
+~!3D_Model (SI3493DDV-T1-GE3)
+SI3493DDV-T1-GE3
+1.1!U 2.1!U 3.1!U 6.1!U 5.1!U 4.1!U 

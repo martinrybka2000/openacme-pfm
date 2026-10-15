@@ -1,0 +1,16 @@
+.LAN8740AI-EN-TR :1 ;Ethernet ICs Small Footprint MII/RMII 10/100 Energy Efficient Ethernet Transceiver
+QFN50P500X500X100-33N-D
+*STM IC
+*NGS
+*PLB 1="VDD2A" 2="LED2/NINT/NPME/'NINTSEL'" 3="LED1/NINT/NPME/'REGOFF'" 4="XTAL2" 5="XTAL1/CLKIN" 6="VDDCR" 7="RXCLK/'PHYAD1'" 8="RXD3/'PHYAD2'" 9="RXD2/NPME/'RMIISEL'" 10="RXD1/'MODE1'" 11="RXD0/'MODE0'" 12="VDDIO" 13="RXER/RXD4/'PHYAD0'" 14="CRS" 15="COL/CRS_DV/'MODE2'" 16="MDIO" 17="MDC" 18="NINT/TXER/TXD4" 19="NRST" 20="TXCLK" 21="TXEN" 22="TXD0" 23="TXD1" 24="TXD2" 25="TXD3" 26="RXDV" 27="VDD1A" 28="TXN" 29="TXP" 30="RXN" 31="RXP" 32="RBIAS" 33="EP"
+*MXP 33
+*DFN LAN8740AI-EN-TR
+~!Mouser Part Number (579-LAN8740AI-EN-TR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8740AI-EN-TR?qs=6qKXPk0vzx1pdBrIaNrUbA%3D%3D)
+~!Manufacturer_Name (Microchip)
+~!Manufacturer_Part_Number (LAN8740AI-EN-TR)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/DKDS-15/280025.pdf)
+~!Height (1mm)
+~!3D_Model (LAN8740AI-EN-TR)
+LAN8740AI-EN-TR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 24.1!U 23.1!U 22.1!U 21.1!U 20.1!U 19.1!U 18.1!U 17.1!U 33.1!U 32.1!U 31.1!U 30.1!U 29.1!U 28.1!U 27.1!U 26.1!U 25.1!U 

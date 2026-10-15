@@ -1,0 +1,13 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AMC")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_AMC3306M25DWE/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "TI_TPS")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_TPS259620DDAR/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "25MHz")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_DSC1001DI1-025-0000/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "ETH")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_RJHSE-5380/KiCad")(options "")(descr ""))
+  (lib (name "ETH_MAG")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_ALANL100X1-DE12DT/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "ETH_PHY")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_LAN8740AI-EN-TR/LAN8740AI-EN-TR/KiCad")(options "")(descr ""))
+  (lib (name "SSR")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/TLP176AM_TPL,E/KiCad")(options "")(descr ""))
+  (lib (name "Schmitt")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_SN74LVC14APWRG3/SN74LVC14APWRG3/KiCad")(options "")(descr ""))
+  (lib (name "SI3493DDV-T1-GE3")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_SI3493DDV-T1-GE3/SI3493DDV-T1-GE3/KiCad")(options "")(descr ""))
+  (lib (name "PS_opto")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/PS2802-1-F3-A/KiCad")(options "")(descr ""))
+)

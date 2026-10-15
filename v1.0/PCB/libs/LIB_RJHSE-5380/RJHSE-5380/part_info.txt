@@ -1,0 +1,9 @@
+Manufacturer=Amphenol Communications Solutions
+PartNumber=RJHSE-5380
+PartCategory=Connector
+PackageCategory=Other
+PinCount=10
+Version=2.3
+Released=2025-04-09 06:21:02
+Downloaded=2025-04-29 22:09:21
+3D=Y

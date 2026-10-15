@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SN74LVC14APWRG3'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "SN74LVC14APWRG3" (!) = "", "SOP65P640X120-14N", "Small Outline Packages", "595-SN74LVC14APWRG3", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LVC14APWRG3?qs=GI4%2FryNtbd0oVXocaK57NQ%3D%3D", "Hex Schmitt-Trigger Inverter", "http://www.ti.com/lit/gpn/sn74lvc14a", "1.2 mm"
+END_PART
+
+END.

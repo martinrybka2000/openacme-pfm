@@ -1,0 +1,9 @@
+stary I 746.52280e-8
+
+calibracaja dla 10.0 A 
+756.89856e-8
+
+około 10ma dryftu przy 10A i 20mA dryftu przy 16A
+
+zdjecie kamerą dla 10A i 16A -20A
+parzące przy dotyku dla 20A

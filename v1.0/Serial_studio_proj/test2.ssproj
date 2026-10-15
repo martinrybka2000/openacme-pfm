@@ -1,0 +1,689 @@
+{
+    "actions": [
+        {
+            "autoExecuteOnConnect": false,
+            "binary": false,
+            "eol": "",
+            "icon": "Scared Face Meme",
+            "repeatCount": 3,
+            "sourceId": 0,
+            "timerIntervalMs": 100,
+            "timerMode": 0,
+            "title": "New Action",
+            "txData": "",
+            "txEncoding": 0
+        }
+    ],
+    "customizeWorkspaces": true,
+    "groups": [
+        {
+            "datasets": [
+                {
+                    "datasetId": 0,
+                    "displayFormat": "0d",
+                    "displayTickCount": 5,
+                    "fft": true,
+                    "fftMax": 600,
+                    "fftMin": -600,
+                    "fftSamples": 1024,
+                    "fftSamplingRate": 1000,
+                    "graph": false,
+                    "groupId": 0,
+                    "index": 1,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "numericValue": 0,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "New Dataset",
+                    "transformCode": "/*\n * Define a transform(value) function that receives the live\n * dataset reading and returns a transformed number. If no\n * transform() function is defined, the raw value is kept\n * and nothing is saved with the project.\n *\n * Example:\n *   function transform(value) {\n *     return value * 0.01 + 273.15;\n *   }\n *\n * Globals declared at the top level persist between frames,\n * which is useful for filters, accumulators, and any other\n * stateful transform -- just like a frame parser script:\n *\n *   var alpha = 0.1;\n *   var ema;\n *\n *   function transform(value) {\n *     if (ema === undefined) ema = value;\n *     ema = alpha * value + (1 - alpha) * ema;\n *     return ema;\n *   }\n *\n * Use the Template dropdown for ready-made examples, or\n * click Test to try your function.\n */\n \n\nfunction transform(value) {\n      return value * 100.0;\n    }",
+                    "transformLanguage": 0,
+                    "units": "",
+                    "value": "",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                },
+                {
+                    "datasetId": 1,
+                    "displayFormat": "0d",
+                    "displayTickCount": 5,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "groupId": 0,
+                    "index": 3,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "numericValue": 0,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "New Dataset (2)",
+                    "units": "",
+                    "value": "",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                }
+            ],
+            "title": "Multiple Plot",
+            "widget": "multiplot"
+        },
+        {
+            "datasets": [
+                {
+                    "datasetId": 0,
+                    "displayFormat": "0d",
+                    "displayTickCount": 5,
+                    "fft": true,
+                    "fftMax": 55,
+                    "fftMin": 45,
+                    "fftSamples": 1024,
+                    "fftSamplingRate": 1000,
+                    "graph": false,
+                    "groupId": 1,
+                    "index": 4,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "numericValue": 0,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "New Dataset",
+                    "units": "",
+                    "value": "",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                }
+            ],
+            "title": "Multiple Plot (2)",
+            "widget": "multiplot"
+        },
+        {
+            "datasets": [
+                {
+                    "datasetId": 0,
+                    "displayFormat": "0d",
+                    "displayTickCount": 5,
+                    "fft": false,
+                    "fftMax": 55,
+                    "fftMin": -45,
+                    "fftSamples": 1024,
+                    "fftSamplingRate": 1000,
+                    "graph": false,
+                    "groupId": 2,
+                    "index": 4,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "numericValue": 0,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "New Dataset",
+                    "transformCode": "// 'value' is the live numeric reading for this dataset,\n// updated on every incoming frame.\n//\n// Globals declared at the top level persist between frames, so\n// filters, accumulators, and other stateful transforms can keep\n// their state across calls — just like a frame parser script.\n//\n// Moving Average\n// Smooths noisy signals by averaging the last N samples. Uses a\n// circular buffer for memory efficiency. Introduces N/2 frames of lag.\n// Adjust N to match your sensor.\n//\n// Implementation note: the running sum is maintained in O(1) per\n// sample by subtracting the value leaving the window and adding the\n// new one. This keeps the transform cheap even at audio rates where\n// N may be in the tens of thousands.\n//\n\nvar N = 100;\nvar history = new Array(N).fill(0);\nvar idx = 0;\nvar count = 0;\nvar sum = 0;\n\nfunction transform(value) {\n  sum = sum - history[idx] + value;\n  history[idx] = value;\n  idx = (idx + 1) % N;\n  if (count < N) count++;\n\n  return sum / count;\n}\n",
+                    "transformLanguage": 0,
+                    "units": "",
+                    "value": "",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                }
+            ],
+            "title": "Multiple Plot (3)",
+            "widget": "multiplot"
+        },
+        {
+            "datasets": [
+                {
+                    "datasetId": 0,
+                    "displayFormat": "0d",
+                    "displayTickCount": 5,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "groupId": 3,
+                    "index": 3,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "numericValue": 0,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "New Dataset",
+                    "units": "",
+                    "value": "",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                },
+                {
+                    "datasetId": 1,
+                    "displayFormat": "0d",
+                    "displayTickCount": 5,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "groupId": 3,
+                    "index": 3,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "numericValue": 0,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "New Dataset (1)",
+                    "transformCode": "/*\n * Define a transform(value) function that receives the live\n * dataset reading and returns a transformed number. If no\n * transform() function is defined, the raw value is kept\n * and nothing is saved with the project.\n *\n * Example:\n *   function transform(value) {\n *     return value * 0.01 + 273.15;\n *   }\n *\n * Globals declared at the top level persist between frames,\n * which is useful for filters, accumulators, and any other\n * stateful transform -- just like a frame parser script:\n *\n *   var alpha = 0.1;\n *   var ema;\n *\n *   function transform(value) {\n *     if (ema === undefined) ema = value;\n *     ema = alpha * value + (1 - alpha) * ema;\n *     return ema;\n *   }\n *\n * Use the Template dropdown for ready-made examples, or\n * click Test to try your function.\n */\n \n // Zmienne globalne, które \"żyją\" między kolejnymi próbkami\nvar sawCount = 0;\nvar isArmed = false;\n\nfunction transform(value) {\n    // 1. Jeśli sygnał osiągnie wysoką wartość (prawie koniec piły), uzbrajamy licznik\n    if (value > 350.0) {\n        isArmed = true;\n    }\n    \n    // 2. Jeśli sygnał był uzbrojony, a teraz gwałtownie spadł (np. poniżej 90 stopni), \n    // to znaczy, że piła zresetowała się do zera.\n    if (isArmed && value < 90.0) {\n        sawCount++;       // Zwiększamy licznik\n        isArmed = false;  // Rozbrajamy, czekając na kolejną piłę\n    }\n    \n    // Zwracamy zliczoną sumę zamiast surowego kąta theta\n    return sawCount;\n}",
+                    "transformLanguage": 0,
+                    "units": "",
+                    "value": "",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                }
+            ],
+            "title": "Data Grid",
+            "widget": "datagrid"
+        }
+    ],
+    "hexadecimalDelimiters": true,
+    "pointCount": 10000,
+    "schemaVersion": 3,
+    "sources": [
+        {
+            "busType": 1,
+            "checksum": "",
+            "checksumAlgorithm": "",
+            "connection": {
+                "address": "192.168.1.15",
+                "socketTypeIndex": 0,
+                "tcpPort": 12345
+            },
+            "decoder": 3,
+            "decoderMethod": 3,
+            "frameDetection": 3,
+            "frameEnd": "",
+            "frameParserCode": "/**\n * Raw Bytes Parser\n *\n * Parses raw binary data into an array of byte values (0-255).\n *\n * INPUT FORMAT: Binary frame data (QByteArray)\n * OUTPUT ARRAY: [0x12, 0x34, 0x56, 0x78, ...]\n *\n * Note: This parser requires Binary (Direct) decoder mode in the Project Editor.\n *       Frame delimiters are automatically removed by Serial Studio.\n */\n\n//------------------------------------------------------------------------------\n// Frame Parser Function\n//------------------------------------------------------------------------------\n\n/**\n * Parses a raw binary frame into an array of byte values.\n *\n * @param {array} frame - The raw binary data from the data source (byte array)\n * @returns {array} Array of byte values (0-255)\n */\nfunction parse(frame) {\n    // 1. Sprawdzamy, czy mamy wystarczająco dużo danych na 4 floaty (4 * 4 = 16 bajtów)\n    if (frame.length < 16) {\n        return []; \n    }\n    \n    // 2. Tworzymy większy bufor\n    let buffer = new ArrayBuffer(16);\n    let bytes = new Uint8Array(buffer);\n    \n    // 3. Przepisujemy 16 bajtów\n    for (let i = 0; i < 16; i++) {\n        bytes[i] = frame[i];\n    }\n    \n    // 4. Odczytujemy 4 floaty, przesuwając się co 4 bajty w pamięci\n    let view = new DataView(buffer);\n    let v_raw     = view.getFloat32(0, true);\n    let i_raw     = view.getFloat32(4, true); \n    let pll_theta = view.getFloat32(8, true); \n    let pll_omega = view.getFloat32(12, true); \n    \n    // 5. Zwracamy 4 wartości\n    return [v_raw, i_raw, pll_theta, pll_omega];\n}\n",
+            "frameStart": "AA AA",
+            "hexadecimalDelimiters": true,
+            "sourceId": 0,
+            "title": "STM32"
+        }
+    ],
+    "title": "test2",
+    "widgetSettings": {
+        "13:0:3": {
+            "page": 0
+        },
+        "2:0:-1": {
+            "interpolationMode": 1,
+            "visibleCurves": null
+        },
+        "2:1:-1": {
+            "userShowXLabel": true,
+            "visibleCurves": null
+        },
+        "7:0:1": {
+            "showAreaUnderPlot": false
+        },
+        "activeGroup": 5002,
+        "layout:1000": {
+            "data": {
+                "autoLayout": true,
+                "canvasHeight": 658,
+                "canvasWidth": 1958,
+                "geometries": [
+                    {
+                        "height": 650,
+                        "id": 0,
+                        "relativeIndex": 0,
+                        "state": "closed",
+                        "widgetType": 0,
+                        "width": 975,
+                        "x": 4,
+                        "y": 4
+                    },
+                    {
+                        "height": 650,
+                        "id": 1,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 1950,
+                        "x": 4,
+                        "y": 4
+                    }
+                ],
+                "userReordered": false,
+                "windowOrder": [
+                    0,
+                    1
+                ],
+                "windowOrderTyped": [
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 0
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 2
+                    }
+                ]
+            }
+        },
+        "layout:1001": {
+            "data": {
+                "autoLayout": true,
+                "canvasHeight": 658,
+                "canvasWidth": 1958,
+                "geometries": [
+                    {
+                        "height": 650,
+                        "id": 0,
+                        "relativeIndex": 0,
+                        "state": "closed",
+                        "widgetType": 0,
+                        "width": 975,
+                        "x": 4,
+                        "y": 4
+                    },
+                    {
+                        "height": 650,
+                        "id": 1,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 1950,
+                        "x": 4,
+                        "y": 4
+                    }
+                ],
+                "userReordered": false,
+                "windowOrder": [
+                    0,
+                    1
+                ],
+                "windowOrderTyped": [
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 0
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 2
+                    }
+                ]
+            }
+        },
+        "layout:1005": {
+            "data": {
+                "autoLayout": true,
+                "canvasHeight": 1184,
+                "canvasWidth": 2562,
+                "geometries": [
+                    {
+                        "height": 1176,
+                        "id": 0,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 0,
+                        "width": 1277,
+                        "x": 4,
+                        "y": 4
+                    },
+                    {
+                        "height": 588,
+                        "id": 5,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 15,
+                        "width": 1278,
+                        "x": 1280,
+                        "y": 4
+                    },
+                    {
+                        "height": 588,
+                        "id": 1,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 1,
+                        "width": 1278,
+                        "x": 1280,
+                        "y": 591
+                    }
+                ],
+                "userReordered": false,
+                "windowOrder": [
+                    0,
+                    5,
+                    1
+                ],
+                "windowOrderTyped": [
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 0
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 15
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 1
+                    }
+                ]
+            }
+        },
+        "layout:4999": {
+            "data": {
+                "autoLayout": true,
+                "canvasHeight": 733,
+                "canvasWidth": 2148,
+                "geometries": [
+                    {
+                        "height": 725,
+                        "id": 0,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 0,
+                        "width": 1070,
+                        "x": 4,
+                        "y": 4
+                    },
+                    {
+                        "height": 725,
+                        "id": 1,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 1070,
+                        "x": 1073,
+                        "y": 4
+                    }
+                ],
+                "userReordered": false,
+                "windowOrder": [
+                    0,
+                    1
+                ],
+                "windowOrderTyped": [
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 0
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 2
+                    }
+                ]
+            }
+        },
+        "layout:5002": {
+            "data": {
+                "autoLayout": true,
+                "canvasHeight": 623,
+                "canvasWidth": 2148,
+                "geometries": [
+                    {
+                        "height": 308,
+                        "id": 0,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 0,
+                        "width": 1070,
+                        "x": 4,
+                        "y": 4
+                    },
+                    {
+                        "height": 308,
+                        "id": 2,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 1070,
+                        "x": 1073,
+                        "y": 4
+                    },
+                    {
+                        "height": 308,
+                        "id": 3,
+                        "relativeIndex": 1,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 1070,
+                        "x": 4,
+                        "y": 311
+                    },
+                    {
+                        "height": 308,
+                        "id": 4,
+                        "relativeIndex": 2,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 1070,
+                        "x": 1073,
+                        "y": 311
+                    }
+                ],
+                "userReordered": true,
+                "windowOrder": [
+                    0,
+                    2,
+                    3,
+                    4
+                ],
+                "windowOrderTyped": [
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 0
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 2
+                    },
+                    {
+                        "relativeIndex": 1,
+                        "widgetType": 2
+                    },
+                    {
+                        "relativeIndex": 2,
+                        "widgetType": 2
+                    }
+                ]
+            }
+        },
+        "layout:999": {
+            "data": {
+                "autoLayout": true,
+                "canvasHeight": 658,
+                "canvasWidth": 1958,
+                "geometries": [
+                    {
+                        "height": 650,
+                        "id": 0,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 0,
+                        "width": 975,
+                        "x": 4,
+                        "y": 4
+                    },
+                    {
+                        "height": 325,
+                        "id": 1,
+                        "relativeIndex": 0,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 976,
+                        "x": 978,
+                        "y": 4
+                    },
+                    {
+                        "height": 325,
+                        "id": 2,
+                        "relativeIndex": 1,
+                        "state": "normal",
+                        "widgetType": 2,
+                        "width": 976,
+                        "x": 978,
+                        "y": 328
+                    }
+                ],
+                "userReordered": false,
+                "windowOrder": [
+                    0,
+                    1,
+                    2
+                ],
+                "windowOrderTyped": [
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 0
+                    },
+                    {
+                        "relativeIndex": 0,
+                        "widgetType": 2
+                    },
+                    {
+                        "relativeIndex": 1,
+                        "widgetType": 2
+                    }
+                ]
+            }
+        }
+    },
+    "workspaces": [
+        {
+            "title": "Multiple Plot",
+            "widgetRefs": [
+                {
+                    "groupId": 0,
+                    "relativeIndex": 0,
+                    "widgetType": 2
+                }
+            ],
+            "workspaceId": 5000
+        },
+        {
+            "icon": "qrc:/icons/panes/dashboard.svg",
+            "title": "All Data",
+            "widgetRefs": [
+                {
+                    "groupId": 0,
+                    "relativeIndex": 0,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 1,
+                    "relativeIndex": 1,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 2,
+                    "relativeIndex": 2,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 2,
+                    "relativeIndex": 0,
+                    "widgetType": 7
+                },
+                {
+                    "groupId": 1,
+                    "relativeIndex": 0,
+                    "widgetType": 7
+                }
+            ],
+            "workspaceId": 5001
+        },
+        {
+            "icon": "qrc:/icons/panes/overview.svg",
+            "title": "Overview",
+            "widgetRefs": [
+                {
+                    "groupId": 0,
+                    "relativeIndex": 0,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 1,
+                    "relativeIndex": 1,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 2,
+                    "relativeIndex": 2,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 0,
+                    "relativeIndex": 0,
+                    "widgetType": 7
+                }
+            ],
+            "workspaceId": 5002
+        },
+        {
+            "title": "Multiple Plot (2)",
+            "widgetRefs": [
+                {
+                    "groupId": 1,
+                    "relativeIndex": 1,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 1,
+                    "relativeIndex": 0,
+                    "widgetType": 7
+                }
+            ],
+            "workspaceId": 5003
+        },
+        {
+            "title": "Multiple Plot (3)",
+            "widgetRefs": [
+                {
+                    "groupId": 2,
+                    "relativeIndex": 2,
+                    "widgetType": 2
+                },
+                {
+                    "groupId": 2,
+                    "relativeIndex": 0,
+                    "widgetType": 7
+                }
+            ],
+            "workspaceId": 5004
+        },
+        {
+            "title": "Data Grid",
+            "widgetRefs": [
+                {
+                    "groupId": 3,
+                    "relativeIndex": 0,
+                    "widgetType": 1
+                }
+            ],
+            "workspaceId": 5005
+        }
+    ],
+    "writerVersion": "3.2.7",
+    "writerVersionAtCreation": "3.2.7"
+}

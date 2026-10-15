@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PS2802_1_F3_A'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Renesas Electronics", "PS2802-1-F3-A" (!) = "", "SOIC127P700X210-4N", "Small Outline Packages", "551-PS2802-1-F3-A", "https://www.mouser.co.uk/ProductDetail/Renesas-Electronics/PS2802-1-F3-A?qs=NSmgnqlvnz4l4ZLxB5wfPQ%3D%3D", "The PS2802-1 and PS2802-4 are optically coupled isolators containing a GaAs light emitting diode and an NPN silicon darlington-connected photo transistor in a plastic SSOP for high density applications. This package has shield effect to cut off ambient light.", "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/d5e9a0d999b082b70edf77f651ecda08.pdf", "2.1 mm"
+END_PART
+
+END.

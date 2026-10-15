@@ -1,0 +1,16 @@
+ESD footprint
+TPS UV/OV resistors
+VCC do fault led powinno być przed TPS
+R35 zbędny, R36 prawdopodobnie też 
+Odstep pomiędzy wyspami zasilań 
+
+- zle poprawoadzana para róznicowa z ADC
+- brak kondesatorów przy przejściach lini do Sigm-delta z masy na VCC
+- USB za daleko od krawędzi 
+- I2c można by lepiej żeby łatwiej było oleda bezpośrednio 
+- I2c SCL do złego pinu xd - idzie przemapować w CUBEMX
+
+
+Zjebany Ethernet, nie bezie działał w MII xd
+- piny PC2_C i PC3_C fizycznie nie zadziałają na tym STMie
+- brak pamięci eeprom - nie można nic na stałe zapisać xd 

@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=LAN8740AI-EN-TR
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat No-Lead
+PinCount=33
+Version=1.1
+Released=2020-10-21 12:41:02
+Downloaded=2025-05-02 22:17:43
+3D=Y

@@ -1,0 +1,10 @@
+20:44 - start
+
+[D] Czajnik
+[D] Odkurzacz maly (brak startu)
+[D] odkurzacz duzy (brak startu)
+[D] bieznia
+[D] lampka nocna
+[D] PC
+[D] wyzynarka
+-  

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RJHSE_5380'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Amphenol Communications Solutions", "RJHSE-5380" (!) = "", "RJHSE5380", "Other", "", "", "Jack Modular Connector 8p8c (RJ45, Ethernet) 90 Angle (Right) Shielded, EMI Finger , 125VAC , 1.5A , -55C ~ 85C", "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/rjhsex380.pdf", "13.716 mm"
+END_PART
+
+END.

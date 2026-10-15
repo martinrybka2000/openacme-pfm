@@ -1,0 +1,19 @@
+name: CI - Docs
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - '**.md'
+  pull_request:
+    paths:
+      - 'docs/**'
+      - '**.md'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Markdown lint (placeholder)
+        run: echo "Docs CI is a stub — add markdownlint + a link checker."

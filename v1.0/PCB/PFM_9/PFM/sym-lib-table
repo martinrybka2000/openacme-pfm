@@ -1,0 +1,13 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TI_AMC")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_AMC3306M25DWE/KiCADv6/2025-04-27_18-12-26.kicad_sym")(options "")(descr ""))
+  (lib (name "TI_TPS")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_TPS259620DDAR/KiCADv6/2025-04-27_20-38-09.kicad_sym")(options "")(descr ""))
+  (lib (name "DSC1001")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_DSC1001DI1-025-0000/KiCADv6/2025-04-28_17-19-24.kicad_sym")(options "")(descr ""))
+  (lib (name "ETH")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_RJHSE-5380/KiCad/RJHSE-5380.kicad_sym")(options "")(descr ""))
+  (lib (name "ETH_mag")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/ul_ALANL100X1-DE12DT/KiCADv6/2025-04-30_12-43-51.kicad_sym")(options "")(descr ""))
+  (lib (name "ETH_PHY")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_LAN8740AI-EN-TR/LAN8740AI-EN-TR/KiCad/LAN8740AI-EN-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "SSR")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/TLP176AM_TPL,E/KiCad/TLP176AM_TPL_E.kicad_sym")(options "")(descr ""))
+  (lib (name "Schmitt")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_SN74LVC14APWRG3/SN74LVC14APWRG3/KiCad/SN74LVC14APWRG3.kicad_sym")(options "")(descr ""))
+  (lib (name "SI3493DDV-T1-GE3")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/LIB_SI3493DDV-T1-GE3/SI3493DDV-T1-GE3/KiCad/SI3493DDV-T1-GE3.kicad_sym")(options "")(descr ""))
+  (lib (name "PS_opto")(type "KiCad")(uri "${KICAD_PROJECTS_DIR}/02_PF_measurment/PCB/libs/PS2802-1-F3-A/KiCad/PS2802-1-F3-A.kicad_sym")(options "")(descr ""))
+)

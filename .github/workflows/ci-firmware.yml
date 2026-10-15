@@ -1,0 +1,24 @@
+name: CI - Firmware
+
+on:
+  push:
+    paths:
+      - 'firmware/**'
+  pull_request:
+    paths:
+      - 'firmware/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # TODO: replace with the real toolchain once firmware/control exists.
+      # Expected flow (CubeMX-generated, CMake-based):
+      #   1. install arm-none-eabi-gcc + cmake + ninja
+      #   2. cmake -S firmware/control -B build
+      #   3. cmake --build build
+      - name: Toolchain (placeholder)
+        run: echo "Firmware CI is a stub — wire up arm-none-eabi-gcc + cmake once firmware/control lands."
