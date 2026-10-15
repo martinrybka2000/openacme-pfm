@@ -43,3 +43,4 @@ V1.0 used TI **AMC3336** (voltage) and **AMC3306M25** (current) isolated sigma-d
 - If ADI-SPI: measurement board is passive (ADC only); the control MCU can be smaller/slower.
 - Isolation budget moves outside the ADC for ADEMA.
 - Sample rate drops vs V1.0 (78 kSps).
+- Isolation of power supply and SPI is needed

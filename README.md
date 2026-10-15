@@ -27,11 +27,12 @@ The V1.0 single-board prototype (the basis of my master's thesis) is preserved *
 
 ## Planned architecture (V2.0)
 
-- **Two boards:** a reusable *control board* (MCU, power, Ethernet/Modbus, HMI, SD) + swappable *measurement board* (1-phase or 3-phase; shunt, CT or Rogowski). Exact KiCad split is TBD.
+- **Two boards:** a reusable _control board_ (MCU, power, Ethernet/Modbus, HMI, SD) + swappable _measurement board_ (1-phase or 3-phase; shunt, CT or Rogowski). Exact KiCad split is TBD.
 - **Isolated sigma-delta** acquisition at high sample rates.
 - **Comms:** Modbus TCP, Modbus RTU/RS485, PQDIF (IEEE 1159.3). WiFi is a separate board variant with an ESP instead of the STM32.
 - **Power:** 24 V DC on the control board, USB-C for configuration, or transformer-fed from the measured phase (option).
 - **Mechanical:** DIN-rail enclosure.
+- **Measurments:** Adding FFT and other power qality measurments capability
 
 ## Repository layout
 
@@ -60,10 +61,10 @@ See [`docs/user-guide/building.md`](docs/user-guide/building.md) for build/flash
 
 This project uses **strong copyleft** licences — if you use it, you must keep your derivatives open:
 
-| Component | Licence | File |
-|---|---|---|
-| Firmware & software | [GPL-3.0](LICENSE) | `LICENSE` |
+| Component                            | Licence                            | File               |
+| ------------------------------------ | ---------------------------------- | ------------------ |
+| Firmware & software                  | [GPL-3.0](LICENSE)                 | `LICENSE`          |
 | Hardware (KiCad, Gerbers, enclosure) | [CERN-OHL-S-2.0](hardware/LICENSE) | `hardware/LICENSE` |
-| Documentation | [CC-BY-SA-4.0](docs/LICENSE) | `docs/LICENSE` |
+| Documentation                        | [CC-BY-SA-4.0](docs/LICENSE)       | `docs/LICENSE`     |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
