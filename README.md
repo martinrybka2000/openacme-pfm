@@ -1,6 +1,6 @@
 # OpenACME‑PFM
 
-**Open** **AC** **M**ains **E**nergy meter — **PFM** (Power Factor Monitor).
+**Open** **AC** **M**ains **E**nergy — **PFM** (Power Factor Meter).
 
 An open-source **power quality meter** for AC installations. It measures voltage, current, power (active / reactive / apparent), frequency, power factors and THD, and exposes the results over Ethernet and Modbus, with PQDIF export for professional analysis tools.
 
@@ -13,7 +13,7 @@ An open-source **power quality meter** for AC installations. It measures voltage
 
 🚧 **V2.0 — under development.**
 
-The V1.0 single-board prototype (the basis of a master's thesis) is preserved **as-is** in [`v1.0/`](v1.0/) for reference only — no cleanup, no support.
+The V1.0 single-board prototype (the basis of my master's thesis) is preserved **as-is** in [`v1.0/`](v1.0/) for reference only — no cleanup, no support.
 
 ## What it measures
 
