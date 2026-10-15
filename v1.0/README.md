@@ -7,4 +7,3 @@ This directory is the home for the **unorganized dump** of the V1.0 work, kept f
 
 **No cleanup, no support.** These files are historical reference; active development happens at the repository root (V2.0).
 
-> ⚠️ The V1.0 files are not present here yet — drop `main.tex`, `chapters/` and `biblio/` (and any other V1.0 files) into this folder before the first push.
