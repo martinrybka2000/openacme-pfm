@@ -5,7 +5,7 @@ Checkboxes reflect the current plan; see also the GitHub issues and `docs/archit
 ## Measurement (primary)
 
 - [x] Research ADCs for 1-/3-phase, series and clamp (see ADR-0001)
-- [ ] Research Rogowski coils and CTs
+- [x] Research Rogowski coils and CTs
 - [ ] Measurement signal filtering
 
 ## Power
