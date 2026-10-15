@@ -32,7 +32,7 @@ The V1.0 single-board prototype (the basis of my master's thesis) is preserved *
 - **Comms:** Modbus TCP, Modbus RTU/RS485, PQDIF (IEEE 1159.3). WiFi is a separate board variant with an ESP instead of the STM32.
 - **Power:** 24 V DC on the control board, USB-C for configuration, or transformer-fed from the measured phase (option).
 - **Mechanical:** DIN-rail enclosure.
-- **Measurments:** Adding FFT and other power qality measurments capability
+- **Measurements:** FFT and other power-quality parameters (voltage dips/swells, flicker).
 
 ## Repository layout
 

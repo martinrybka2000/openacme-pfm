@@ -22,7 +22,7 @@ Status: **draft**. Working requirements for the V2.0 redesign, distilled from th
   - **Control board** — MCU, power, Ethernet/Modbus, HMI, SD, external flash + EEPROM.
   - **Measurement board** — swappable: 1-phase or 3-phase; series (shunt) or non-invasive (CT / Rogowski).
 - **REQ-HW-02** Isolated, high-rate sigma-delta acquisition.
-- **REQ-HW-03** External Flash (QSPI) (If nedded) + dedicated EEPROM (fixes the V1.0 flash limit).
+- **REQ-HW-03** External Flash (QSPI) (if needed) + dedicated EEPROM (fixes the V1.0 flash limit).
 - **REQ-HW-04** Power (split across boards, exact placement TBD): 24 V DC on the control board; USB-C for configuration/initial bring-up; optional transformer-fed supply from the measured phase.
 - **REQ-HW-05** DIN-rail enclosure with normalized mounting.
 
@@ -35,7 +35,7 @@ Status: **draft**. Working requirements for the V2.0 redesign, distilled from th
 
 - **REQ-M-01** Measure: Urms, Irms, U1/I1 (fundamental), P, P1, Q1, S, S1, N, PF, DPF, DF, THD_U, THD_I, frequency, peak.
 - **REQ-M-02** SOGI-PLL grid synchronisation + FFT; 10-cycle aggregation window (IEC 61000-4-7).
-- **REQ-M-03** Measuring other power quality variables like voltage drops, flicker etc.
+- **REQ-M-03** Additional power-quality parameters: voltage dips/swells, flicker.
 - **REQ-M-04** Best-effort Class S behaviour (IEC 61000-4-30) — informational, not certified.
 
 ### Communication
@@ -56,5 +56,5 @@ Status: **draft**. Working requirements for the V2.0 redesign, distilled from th
 ## Open decisions (see ADRs)
 
 - ADC architecture: ADI ADE9112/ADEMA (SPI) vs TI AMC (DFSDM) — see `docs/architecture/adr/0001-adc-architecture.md`.
-- What Mcs to use
+- Which MCU(s) to use
 - Host app language/stack.

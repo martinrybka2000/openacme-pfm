@@ -13,14 +13,14 @@ V1.0 used TI **AMC3336** (voltage) and **AMC3306M25** (current) isolated sigma-d
 
 - **Rogowski or CT**
   - $\color{green}{\text{ADEMA124}}$
-    - **Pros:** ~64 kSps, internal rogowski integrator, One mc,
-    - **Cons:** no isolation, 2 channles not used
+    - **Pros:** ~64 kSps, internal rogowski integrator, one chip,
+    - **Cons:** no isolation, 2 channels unused
 - **Shunt**
   - TI AMC
     - **Pros:** ~78 kSps,
-    - **Cons:** needs DFSDM, two mc (one for current one for voltage),
+    - **Cons:** needs DFSDM, two chips (one for current, one for voltage),
   - $\color{green}{\text{ADE9112 }}$
-    - **Pros:** isolated, one mc,
+    - **Pros:** isolated, one chip,
     - **Cons:** ~32 kSps, problems with supply
 
 ### 3 phase
@@ -28,9 +28,9 @@ V1.0 used TI **AMC3336** (voltage) and **AMC3306M25** (current) isolated sigma-d
 - **Rogowski or CT**
   - ADEMA124 + ADE 9113
     - **Pros:** isolated, SPI chain, internal synchronisation, internal rogowski integrator
-    - **Cons:** ~32 kSps, two mc, in 9113 the third current channel would be used for voltage measurment
+    - **Cons:** ~32 kSps, two chips, in 9113 the third current channel would be used for voltage measurement
   - $\color{green}{\text{ADEMA127}}$
-    - **Pros:** ~64 kSps, on mc, SPI chain, internal synchronisation, internal rogowski integrator , same footprint as ADEMA124.
+    - **Pros:** ~64 kSps, one chip, SPI chain, internal synchronisation, internal rogowski integrator, same footprint as ADEMA124.
     - **Cons:** no isolation
 
 - **Shunt**
