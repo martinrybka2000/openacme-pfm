@@ -9,27 +9,37 @@ V1.0 used TI **AMC3336** (voltage) and **AMC3306M25** (current) isolated sigma-d
 
 ## Options
 
-### Option A — TI AMC + DFSDM (keep V1.0 approach)
+### 1 phase
 
-- **Pros:** proven in V1.0, ~78 kSps, high resolution, integrated isolation + DC/DC converter.
-- **Cons:** requires a DFSDM-capable MCU (locks us to STM32 H7 class); two chips per channel (voltage + current).
+- **Rogowski or CT**
+  - $\color{green}{\text{ADEMA124}}$
+    - **Pros:** ~64 kSps, internal rogowski integrator, One mc,
+    - **Cons:** no isolation, 2 channles not used
+- **Shunt**
+  - TI AMC
+    - **Pros:** ~78 kSps,
+    - **Cons:** needs DFSDM, two mc (one for current one for voltage),
+  - $\color{green}{\text{ADE9112 }}$
+    - **Pros:** isolated, one mc,
+    - **Cons:** ~32 kSps, problems with supply
 
-### Option B — ADI ADE9112/3 (isolated, SPI)
+### 3 phase
 
-- **Pros:** one chip, SPI with daisy-chain, integrated isolation, channel synchronisation.
-- **Cons:** 32 kSps (lower than V1.0), limited availability.
+- **Rogowski or CT**
+  - ADEMA124 + ADE 9113
+    - **Pros:** isolated, SPI chain, internal synchronisation, internal rogowski integrator
+    - **Cons:** ~32 kSps, two mc, in 9113 the third current channel would be used for voltage measurment
+  - $\color{green}{\text{ADEMA127}}$
+    - **Pros:** ~64 kSps, on mc, SPI chain, internal synchronisation, internal rogowski integrator , same footprint as ADEMA124.
+    - **Cons:** no isolation
 
-### Option C — ADI ADEMA124/127 (non-isolated, SPI)
-
-- **Pros:** 64 kSps, internal Rogowski integrator + high-pass filter, 4 or 7 channels, same footprint family (flexible board).
-- **Cons:** no isolation — needs external signal + power isolation.
-
-## Decision
-
-TBD — pending evaluation. Leaning towards **ADI-SPI** (Options B/C) to free the MCU choice and enable a passive measurement board.
+- **Shunt**
+  - $\color{green}{\text{3x ADE9112}}$
+    - **Pros:** isolated, SPI chain, internal synchronisation
+    - **Cons:** ~32 kSps, problems with supply
 
 ## Consequences
 
 - If ADI-SPI: measurement board is passive (ADC only); the control MCU can be smaller/slower.
 - Isolation budget moves outside the ADC for ADEMA.
-- Sample rate drops vs V1.0 (78 kSps) — verify Class S / THD headroom.
+- Sample rate drops vs V1.0 (78 kSps).
