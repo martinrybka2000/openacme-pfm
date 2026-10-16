@@ -49,7 +49,7 @@ galvanically isolated from the control board.
 |---|---|---|
 | Channels (fwd/rev) | 7 (4 fast 3/1 + 3 slow) | 6/1 — exact |
 | SPI rate | 17 MHz | 100 / 50 Mbps |
-| Isolated power | ~500 mW (33% eff.) | 550 mW (46% eff.) |
+| Isolated power | 300 mW (33% eff.) | 550 mW (46% eff.) |
 | Output ripple / noise | 75 mV / 200 mV | 24 mV |
 | Switching / EMI | 180 MHz → ferrites | 25 MHz → low-emissions |
 | CMTI | >25 kV/µs | 85–150 kV/µs |
